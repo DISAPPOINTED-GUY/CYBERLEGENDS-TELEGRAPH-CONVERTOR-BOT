@@ -84,8 +84,8 @@ async def home(client, message):
         InlineKeyboardButton('Close', callback_data='close')
     ],
     [
-              InlineKeyboardButton('Our Channel', url='https://t.me/MAHADEV_TORNADO_NETWORK'),
-        InlineKeyboardButton('âš¡DÌ¸EÌ¸VÍŽEÍŽLÍ¢OÍ¢PÌ¶EÌ¶RÌ¶âš¡â€Š', url='https://t.me/MAHADEV_TORNADO_UPDATES')
+              InlineKeyboardButton('Our Channel', url='https://t.me/Cyberlegends_NETWORK'),
+        InlineKeyboardButton('âš¡DÌ¸EÌ¸VÍŽEÍŽLÍ¢OÍ¢PÌ¶EÌ¶RÌ¶âš¡â€Š', url='https://t.me/Cyberlegends_UPDATES')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await Cyberlegends.send_message(
@@ -110,7 +110,7 @@ async def help(client, message):
         InlineKeyboardButton('Close', callback_data='close')
     ],
     [
-        InlineKeyboardButton('Our Channel', url='https://t.me/MAHADEV_TORNADO_NETWORK')
+        InlineKeyboardButton('Our Channel', url='https://t.me/Cyberlegends_Network')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await Cyberlegends.send_message(
@@ -144,7 +144,3 @@ async def button(Cyberlegends, update):
         await home(Cyberlegends, update.message)
 Cyberlegends.run()
 
-        InlineKeyboardButton('Our Channel', url='https://t.me/MAHADEV_TORNADO_NETWORK'),
-        InlineKeyboardButton('âš¡DÌ¸EÌ¸VÍŽEÍŽLÍ¢OÍ¢PÌ¶EÌ¶RÌ¶âš¡â€Š', url='https://t.me/MAHADEV_TORNADO_UPDATES')
-    ]]
-  reply_markup = InlineKeyboardMarkup(buttons)
