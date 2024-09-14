@@ -25,8 +25,8 @@ API_HASH=os.getenv("API_HASH")
 BOT_TOKEN=os.getenv("BOT_TOKEN")
 Cyberlegends= Client(
    "Cyberlegends.Uploader",
-   api_id=Config.APP_ID,
-   api_hash=Config.API_HASH,
+   api_id=APP_ID,
+   api_hash=API_HASH,
    bot_token=BOT_TOKEN,
 )
 
