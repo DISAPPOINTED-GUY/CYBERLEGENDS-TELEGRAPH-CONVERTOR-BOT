@@ -57,9 +57,8 @@ async def uploadgif(client, message):
       tlink = upload_file(gif_path)
       await msg.edit_text(f"https://telegra.ph{tlink[0]}")   
       os.remove(gif_path)   
-    except:
-      await msg.edit_text("ã€Žsã€ã€Žoã€ã€Žrã€ã€Žrã€ã€Žyã€- ã€Žkã€ã€Žuã€ã€Žcã€ã€Žhã€ - ã€Žgã€ã€Žaã€ã€Žrã€ã€Žbã€ã€Žaã€ã€Žrã€- ã€Žuã€ã€Žiã€- ã€Žhã€ã€Žaã€ã€Žeã€ ðŸ˜”") 
-  else:
+    except Exception as e:
+      await msg.edit_text("Error : {e}")
     await message.reply_text("Bhai yaar aap plz 5 mb ka niche size ma koi pic de sakteðŸ˜­ plz")
 
 @Cyberlegends.on_message(filters.video)
