@@ -15,17 +15,19 @@ import os
 from telegraph import upload_file
 import pyrogram
 from pyrogram import filters, Client
-from sample_config import Config
 from pyrogram.types import (
     InlineQueryResultArticle, InputTextMessageContent,
     InlineKeyboardMarkup, InlineKeyboardButton,
     CallbackQuery, InlineQuery)
 
+APP_ID=os.getenv("API_ID")
+API_HASH=os.getenv("API_HASH")
+BOT_TOKEN=os.getenv("BOT_TOKEN")
 Cyberlegends= Client(
    "Cyberlegends.Uploader",
    api_id=Config.APP_ID,
    api_hash=Config.API_HASH,
-   bot_token=Config.TG_BOT_TOKEN,
+   bot_token=BOT_TOKEN,
 )
 
 @Cyberlegends.on_message(filters.photo)
