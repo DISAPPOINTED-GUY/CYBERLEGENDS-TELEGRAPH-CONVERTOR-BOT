@@ -60,7 +60,7 @@ async def uploadgif(client, message):
     except Exception as e:
       await msg.edit_text("Error : {e}")
         
-     logger.error(f"Failed: {e}")
+      logger.error(f"Failed: {e}")
 @Cyberlegends.on_message(filters.video)
 async def uploadvid(client, message):
   if(message.video.file_size < 5242880):
