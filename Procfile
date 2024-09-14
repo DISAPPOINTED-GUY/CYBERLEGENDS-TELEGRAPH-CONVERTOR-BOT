@@ -1,1 +1,1 @@
-python3 Cyberlegends.py
+worker: python3 cyberlegends.py
