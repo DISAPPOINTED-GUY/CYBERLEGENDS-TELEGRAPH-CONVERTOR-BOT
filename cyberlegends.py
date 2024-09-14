@@ -59,8 +59,8 @@ async def uploadgif(client, message):
       os.remove(gif_path)   
     except Exception as e:
       await msg.edit_text("Error : {e}")
-    await message.reply_text("Bhai yaar aap plz 5 mb ka niche size ma koi pic de sakteðŸ˜­ plz")
-
+        
+     logger.error(f"Failed: {e}")
 @Cyberlegends.on_message(filters.video)
 async def uploadvid(client, message):
   if(message.video.file_size < 5242880):
